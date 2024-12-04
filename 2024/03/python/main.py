@@ -17,11 +17,11 @@ def part_two(s: str) -> int:
     """It's still regex time"""
     values = []
     pattern = r"(mul|don't|do\b)(?:\((\d+),(\d+)\))?"
-    is_active = True
+    active = True
     for smt in re.findall(pattern, s):
         # goofin' around
-        is_active = False if smt[0] == "don't" else (is_active or smt[0] == "do")
-        if not is_active:
+        active = False if smt[0] == "don't" else (active or smt[0] == "do")
+        if not active:
             continue
         try:
             values.append(int(smt[1]) * int(smt[2]))
