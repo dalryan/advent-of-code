@@ -14,4 +14,5 @@ Solutions mostly posted in Python.
 | 02  | **    | [code](2024/02/python/main.py) |
 | 03  | **    | [code](2024/03/python/main.py) |
 | 04  | **    | [code](2024/04/python/main.py) |
+| 05  | **    | [code](2024/05/python/main.py) |
 </details>
